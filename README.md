@@ -60,6 +60,17 @@ New Project Setup :
 #sudo clear
 
 #sudo docker exec -it -u root jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
+### Pipeline Stages
+
+1. `Checkout`: Checks out the code from the Git repository.
+2. `Build`: Builds the Docker image for the .NET Core application.
+3. `Docker login`: Logs in to Docker Hub using the provided credentials.
+4. `Docker push`: Pushes the Docker image to Docker Hub.
+5. `Run Image`: Runs the Docker container from the pushed image.
+6. `Deploy to Kubernetes`: Deploys the Docker image to a Kubernetes cluster.
+7. `Clean Containers`: Cleans up any Docker containers.
+
 ## Getting Started :
 
 To get started with this project, follow these steps:
@@ -104,6 +115,22 @@ Refer : Jenkinsfile
 
 note:
  you need to save the Environment Variables to use them in pipeline as in /manage jenkins/credential /global/creat credential/username and password
+ 
+## Extra Achivements :
+  
+To deploy the Docker image to a Kubernetes cluster:
+
+1. Make sure you have a Kubernetes cluster set up.
+
+2. Create a `deployment.yaml` file that defines your Kubernetes deployment.
+
+3. Add a `Deploy to Kubernetes` stage to your pipeline that runs the `kubectl apply` command with your `dotnetcore-deployment.yaml` .
+
+4. Make sure the Docker image tag used in your `dotnetcore-deployment.yaml` file matches the Docker image tag pushed in your `Docker push` stage.
+
+5. Run your pipeline and verify that your application is running in your Kubernetes cluster.  
+
+6. you can see container logs weather the container run exited exited.
 
 ## Tech Stack Use :
 
