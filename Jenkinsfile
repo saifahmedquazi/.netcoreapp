@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
    environment {
@@ -7,6 +6,13 @@ pipeline {
     }
 
     stages {
+    
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/saifahmedquazi/.netcoreapp.git'
+                sh 'ls -la'
+            }
+        }    
         
         stage('Build') {
             steps {
@@ -45,3 +51,4 @@ pipeline {
         }
     }
 }
+
