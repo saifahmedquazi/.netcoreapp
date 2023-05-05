@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnetcore-deployment
+  labels:
+    app: dotnetcore
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dotnetcore
+  template:
+    metadata:
+      labels:
+        app: dotnetcore
+    spec:
+      containers:
+      - name: dotnetcore
+        image: saifahmedquazi/dotnetcore
+        resources:
+          limits:
+            cpu: 1
+            memory: 512Mi
+          requests:
+            cpu: 0.5
+            memory: 256Mi
+        ports:
+        - containerPort: 5000
+
