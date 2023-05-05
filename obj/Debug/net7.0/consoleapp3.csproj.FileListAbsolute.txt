@@ -1,0 +1,15 @@
+/home/saif/consoleapp3/bin/Debug/net7.0/consoleapp3
+/home/saif/consoleapp3/bin/Debug/net7.0/consoleapp3.deps.json
+/home/saif/consoleapp3/bin/Debug/net7.0/consoleapp3.runtimeconfig.json
+/home/saif/consoleapp3/bin/Debug/net7.0/consoleapp3.dll
+/home/saif/consoleapp3/bin/Debug/net7.0/consoleapp3.pdb
+/home/saif/consoleapp3/obj/Debug/net7.0/consoleapp3.csproj.AssemblyReference.cache
+/home/saif/consoleapp3/obj/Debug/net7.0/consoleapp3.GeneratedMSBuildEditorConfig.editorconfig
+/home/saif/consoleapp3/obj/Debug/net7.0/consoleapp3.AssemblyInfoInputs.cache
+/home/saif/consoleapp3/obj/Debug/net7.0/consoleapp3.AssemblyInfo.cs
+/home/saif/consoleapp3/obj/Debug/net7.0/consoleapp3.csproj.CoreCompileInputs.cache
+/home/saif/consoleapp3/obj/Debug/net7.0/consoleapp3.dll
+/home/saif/consoleapp3/obj/Debug/net7.0/refint/consoleapp3.dll
+/home/saif/consoleapp3/obj/Debug/net7.0/consoleapp3.pdb
+/home/saif/consoleapp3/obj/Debug/net7.0/consoleapp3.genruntimeconfig.cache
+/home/saif/consoleapp3/obj/Debug/net7.0/ref/consoleapp3.dll
