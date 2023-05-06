@@ -88,7 +88,8 @@ docker run -itd --name dotnetcore -p 8081:5000 dexterquazi/dotnetcore
 
 5.To verify that the Docker container is running, check its status by running the following command:  docker ps -a
 
-6. You should see the container in the "Exited" state.
+6. You should see the container in the "Exited" state,becuse the container runs and print the welcom message and exited after the welcome message is printed, the container exits because there is no process running inside it.
+
 
 7. Finally, to run the .NET Core application using Jenkins, follow the steps mentioned below:
 
@@ -100,10 +101,13 @@ docker run -itd --name dotnetcore -p 8081:5000 dexterquazi/dotnetcore
 * Build the Docker image.
 * Run the Docker container.
 
+8. I also implemented and tested application deployed using Kubernetes so if you want you can refer the below jenkins pipeline stage for kubernetes deployment which i mention below EXTRA ACHIVEMENT section just add the stage and follow the procedure 
+
 Once the pipeline is successfully executed, you should see the "successfullY executed " Jenkins console output.
 ## Environment Variables :
 
 To run this project, you will need to add the following environment variables to your .env file
+
 
 
 
