@@ -1,7 +1,7 @@
 
 # Project Title :
 
-Dotnet Core App Deployed using Docker and integreted with Jenkins
+Dotnet Core test Application Deployed using Docker and integreted with Jenkins
 
 
 
