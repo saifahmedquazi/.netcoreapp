@@ -5,7 +5,7 @@ namespace ConsoleApp
     {
         public static void Main()
         {
-            Console.WriteLine("Hello World! from Saif Ahmed Quazi");
+            Console.WriteLine("WELCOME! from Saif Ahmed Quazi");
         }
     }
 }
