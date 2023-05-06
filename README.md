@@ -155,5 +155,5 @@ To deploy the Docker image to a Kubernetes cluster:
 Congratulations! You have successfully run the .NET Core application using Docker and Jenkins.
 ## Authors :
 
-- [@saifahmedquazi](https://www.github.com/octokatherine)
+- @saifahmedquazi
 
