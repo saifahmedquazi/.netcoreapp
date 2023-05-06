@@ -124,7 +124,15 @@ To deploy the Docker image to a Kubernetes cluster:
 
 2. Create a `dotnetcore-deployment.yaml` file that defines your Kubernetes deployment.
 
-3. Add a `Deploy to Kubernetes` stage to your pipeline that runs the `kubectl apply` command with your `dotnetcore-deployment.yaml` .
+3. Add a `Deploy to Kubernetes` stage to your pipeline that runs the `kubectl apply` command with your `dotnetcore-deployment.yaml` as :
+
+stage('Deploy to Kubernetes') {
+            steps {
+                script {
+                    sh 'kubectl apply -f dotnetcore-deployment.yaml'
+                }
+            }
+        }
 
 4. Make sure the Docker image tag used in your `dotnetcore-deployment.yaml` file matches the Docker image tag pushed in your `Docker push` stage.
 
