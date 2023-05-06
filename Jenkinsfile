@@ -34,13 +34,7 @@ pipeline {
                 }
             }
         }
-        //stage('Deploy to Kubernetes') {
-            //steps {
-                //script {
-                  //  sh 'kubectl apply -f dotnetcore-deployment.yaml'
-               // }
-           // }
-       // }
+        
         stage('Clean Containers') {
             steps {
                 script {
